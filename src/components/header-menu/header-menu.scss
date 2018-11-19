@@ -1,0 +1,33 @@
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  height: 70px;
+  background-color: #2288cc;
+  align-items: center;
+
+  .logo > a {
+    color: #fff;
+    margin-left: 20px;
+  }
+  .block-two {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .hi {
+    color: #fff;
+    margin-right: 20px;
+  }
+  .hamburger-line {
+    border-radius: 5px;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+}
