@@ -17,7 +17,7 @@ export const VideoPlayer = ({ id }) => {
   });
   return (
     <VideoPlayerContext.Provider value={{ state, dispatch }}>
-      <Draggable>
+      <Draggable defaultPosition={{ x: 50, y: 50 }}>
         <div className="video-player">
           <Link to="/">
             <HomeIcon />
@@ -26,7 +26,7 @@ export const VideoPlayer = ({ id }) => {
             <YoutubePlayer id={state.videoId} />
           ) : (
             <div>
-              <img src="/quiz-page.jpg" height="390px" width="640px" />
+              <img src="/quiz-page.jpg" height="280px" width="500px" />
             </div>
           )}
 

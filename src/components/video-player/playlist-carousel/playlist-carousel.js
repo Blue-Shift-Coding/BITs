@@ -9,19 +9,19 @@ import "slick-carousel/slick/slick-theme.css";
 import "./playlist-carousel.scss";
 
 const settings = {
-  dots: true,
-  infinite: false,
-  speed: 500
+  speed: 500,
+  slidesToShow: 4,
+  infinite: false
 };
 export const PlaylistCarousel = () => {
   return (
-    // <Slider {...settings}>
-    <div className="playlist-carousel">
+    // <div className="playlist-carousel">
+    <Slider {...settings} className="playlist-carousel">
       {playlist.map(({ id }) => (
         <PlaylistItem id={id} />
       ))}
       <Quiz />
-    </div>
-    // </Slider>
+    </Slider>
+    // </div>
   );
 };

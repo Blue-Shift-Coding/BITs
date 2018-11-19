@@ -4,9 +4,10 @@
   .title {
     margin-bottom: 3rem;
   }
-  
+
   .video-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }

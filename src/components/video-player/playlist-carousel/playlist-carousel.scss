@@ -1,8 +1,12 @@
 .playlist-carousel {
-  margin-top: 5px;
-  text-align: center;
+  width: 85% !important;
+  margin: 5px auto 0px auto !important;
 
-  img:nth-child(n + 2) {
-    margin-left: 15px;
+  img {
+    display: inline-block;
+
+    &:nth-child(n + 2) {
+      margin-left: 15px;
+    }
   }
 }

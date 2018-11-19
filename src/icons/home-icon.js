@@ -10,7 +10,7 @@ export const HomeIcon = () => {
       width="25px"
       height="25px"
       viewBox="0 0 460.298 460.297"
-      fill="white"
+      fill="#ffe0d8"
     >
       <g>
         <g>

@@ -4,7 +4,7 @@ import "./scratch.scss";
 export const Scratch = () => (
   <div className="scratch">
     <iframe
-      src="https://beta.scratch.mit.edu"
+      src="https://blueshift-scratch.netlify.com"
       width="100%"
       height="100%"
       border="10"

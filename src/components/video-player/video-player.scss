@@ -1,7 +1,10 @@
 .video-player {
-  display: inline-block;
+  width: 500px;
   padding: 5px;
-  background: #1b60b5a6;
+  background: #ff997f;
   cursor: grabbing;
   border-radius: 4px;
+  top: 30%;
+  left: 30%;
+  position: absolute;
 }

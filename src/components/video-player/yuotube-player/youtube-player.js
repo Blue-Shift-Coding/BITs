@@ -4,8 +4,8 @@ import "./youtube-player.scss";
 
 export const YoutubePlayer = ({ id }) => {
   const opts = {
-    height: "390",
-    width: "640",
+    height: "280",
+    width: "500",
     playerVars: {
       modestbranding: 1,
       enablejsapi: 1,
