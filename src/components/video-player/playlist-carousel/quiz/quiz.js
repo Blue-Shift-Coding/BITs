@@ -11,7 +11,7 @@ export const Quiz = () => {
   console.log(state, "-!-");
   return (
     <img
-      src="/quiz.png"
+      src="/quiz-page.jpg"
       height="50px"
       width="100px"
       onClick={openQuiz}
