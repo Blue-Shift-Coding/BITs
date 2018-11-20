@@ -9,11 +9,6 @@ export const HeaderMenu = () => (
     </div>
     <div className="block-two">
       <div className="hi">Hi there, Anubis!</div>
-      <div className="hamburger">
-        <div className="hamburger-line" />
-        <div className="hamburger-line" />
-        <div className="hamburger-line" />
-      </div>
     </div>
   </div>
 );
