@@ -1,19 +1,24 @@
 import React, { useContext } from "react";
 import { YOUTUBE } from "../../../../constants";
 import { VideoPlayerContext } from "../../video-player-context";
+import { BlueshiftTooltip } from "../../../blueshift-tooltip/blueshift-tooltip";
 import "./playlist-item.scss";
 
-export const PlaylistItem = ({ id }) => {
+export const PlaylistItem = ({ id, title }) => {
   const { dispatch } = useContext(VideoPlayerContext);
-  console.log({ id });
+  console.log({ id, title });
   const openVideo = () => dispatch({ type: YOUTUBE, videoId: id });
   return (
-    <img
-      src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
-      width="100px"
-      height="50px"
-      onClick={openVideo}
-      className="playlist-item"
-    />
+    <BlueshiftTooltip title={title}>
+      <img
+        src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
+        width="100px"
+        height="50px"
+        onClick={openVideo}
+        visible
+        defaultVisible={true}
+        className="playlist-item"
+      />
+    </BlueshiftTooltip>
   );
 };

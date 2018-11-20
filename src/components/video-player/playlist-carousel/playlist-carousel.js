@@ -17,8 +17,8 @@ export const PlaylistCarousel = () => {
   return (
     // <div className="playlist-carousel">
     <Slider {...settings} className="playlist-carousel">
-      {playlist.map(({ id }) => (
-        <PlaylistItem id={id} />
+      {playlist.map(({ id, title }) => (
+        <PlaylistItem id={id} title={title} />
       ))}
       <Quiz />
     </Slider>
