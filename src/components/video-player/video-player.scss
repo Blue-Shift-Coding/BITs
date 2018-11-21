@@ -1,11 +1,12 @@
 .video-player {
-  width: 500px;
+  // width: 500px;
   padding: 5px;
   background: #1b60b5a6;
   cursor: grabbing;
   border-radius: 4px;
-  top: 30%;
-  left: 30%;
-  position: absolute;
+  // top: 30% !important; // need to initital position for draggable component
+  // left: 30% !important; // need to initital position for draggable component
+  height: 100%;
+  position: relative;
   z-index: 500;
 }

@@ -6,7 +6,6 @@ import "./playlist-item.scss";
 
 export const PlaylistItem = ({ id, title }) => {
   const { dispatch } = useContext(VideoPlayerContext);
-  console.log({ id, title });
   const openVideo = () => dispatch({ type: YOUTUBE, videoId: id });
   return (
     <BlueshiftTooltip title={title}>

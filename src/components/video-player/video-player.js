@@ -1,8 +1,9 @@
-import React, { useReducer, createContext } from "react";
+import React, { useReducer, createContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { PlaylistCarousel } from "./playlist-carousel/playlist-carousel";
 import { YoutubePlayer } from "./yuotube-player/youtube-player";
-import Draggable from "react-draggable";
+// import Draggable from "react-draggable";
+import { Rnd } from "react-rnd";
 
 import { YOUTUBE } from "../../constants";
 import { videoPlayerType } from "../../reducers/video-player";
@@ -15,24 +16,49 @@ export const VideoPlayer = ({ id }) => {
     playerType: YOUTUBE,
     videoId: id
   });
+  const headerHeight = 70;
+  const initWidthPlayer = 510;
+  const initHeightPlayer = 380;
+  const halfY = window.innerHeight / 2;
+  const halfX = window.innerWidth / 2;
+  const [x, setX] = useState(halfX - initWidthPlayer / 2);
+  const [y, setY] = useState(halfY - headerHeight - initHeightPlayer / 2);
+  const [width, setWidth] = useState(initWidthPlayer);
+  const [height, setHeight] = useState(initHeightPlayer);
   return (
-    <VideoPlayerContext.Provider value={{ state, dispatch }}>
-      <Draggable defaultPosition={{ x: 50, y: 50 }}>
-        <div className="video-player">
-          <Link to="/">
-            <HomeIcon />
-          </Link>
-          {state.playerType === YOUTUBE ? (
-            <YoutubePlayer id={state.videoId} />
-          ) : (
-            <div>
-              <img src="/quiz-page.jpg" height="280px" width="500px" />
-            </div>
-          )}
+    <Rnd
+      size={{ width, height }}
+      position={{ x, y }}
+      minHeight={initHeightPlayer}
+      minWidth={initWidthPlayer}
+      onDragStop={(e, d) => {
+        setY(d.y);
+        setX(d.x);
+      }}
+      onResize={(e, direction, ref, delta, position) => {
+        setWidth(ref.clientWidth);
+        setHeight(ref.clientHeight);
+      }}
+      className="video-player"
+    >
+      <VideoPlayerContext.Provider value={{ state, dispatch }}>
+        <Link to="/">
+          <HomeIcon />
+        </Link>
+        {state.playerType === YOUTUBE ? (
+          <YoutubePlayer
+            id={state.videoId}
+            height={height - 100}
+            width={width - 10}
+          />
+        ) : (
+          <div>
+            <img src="/quiz-page.jpg" height="280px" width="500px" />
+          </div>
+        )}
 
-          <PlaylistCarousel />
-        </div>
-      </Draggable>
-    </VideoPlayerContext.Provider>
+        <PlaylistCarousel />
+      </VideoPlayerContext.Provider>
+    </Rnd>
   );
 };

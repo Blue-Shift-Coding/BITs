@@ -8,7 +8,6 @@ export const Quiz = () => {
   const openQuiz = () => {
     dispatch({ type: QUIZ });
   };
-  console.log(state, "-!-");
   return (
     <img
       src="/quiz-page.jpg"

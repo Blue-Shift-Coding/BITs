@@ -2,10 +2,10 @@ import React from "react";
 import YouTube from "react-youtube";
 import "./youtube-player.scss";
 
-export const YoutubePlayer = ({ id }) => {
+export const YoutubePlayer = ({ id, height, width }) => {
   const opts = {
-    height: "280",
-    width: "500",
+    height,
+    width,
     playerVars: {
       modestbranding: 1,
       enablejsapi: 1,
