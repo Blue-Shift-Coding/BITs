@@ -3,7 +3,6 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 import logo from "./logo.svg";
 import { HeaderMenu } from "./components/header-menu/header-menu";
-import "./App.css";
 import { VideoLibrary } from "./pages/video-library/video-library";
 import { Lesson } from "./pages/lesson/lesson";
 import { BurgerMenu } from "./components/burger-menu/burger-menu";

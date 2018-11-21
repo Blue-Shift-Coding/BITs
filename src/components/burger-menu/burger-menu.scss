@@ -32,17 +32,21 @@
       font-weight: 600;
       cursor: pointer;
       color: white;
-
       span,
       svg {
         transition: all 0.3s ease-out 0s;
-        margin-left: 0;
         vertical-align: middle;
+      }
+      span {
+        margin-left: 10px;
       }
       &:hover {
         & span {
-          margin-left: 10px;
-          color: rgb(188, 223, 231);
+          margin-left: 15px;
+          color: #fcfdff;
+        }
+        & svg {
+          fill: #fcfdff;
         }
       }
     }
