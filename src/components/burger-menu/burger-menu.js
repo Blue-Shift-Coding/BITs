@@ -7,7 +7,7 @@ import { ReactComponent as Video } from "../../icons/video.svg";
 import hamburger from "../../icons/hamburger.svg";
 
 import "./burger-menu.scss";
-const SIZE_ICON = "36px";
+const SIZE_ICON = "28px";
 
 export const BurgerMenu = () => {
   const defaultSize = { width: SIZE_ICON, height: SIZE_ICON };
@@ -20,18 +20,21 @@ export const BurgerMenu = () => {
       right
       width="280px"
     >
-      <p>
-        <Rocket {...defaultSize} /> <span>My staff</span>
-      </p>
-      <p>
+      <div>
+        <Rocket {...defaultSize} /> <span>My stuff</span>
+        <div className="sub-menu">+13,521 points</div>
+        <div className="sub-menu">My challanges</div>
+      </div>
+      <div>
         <Trophy {...defaultSize} /> <span>My achievements</span>
-      </p>
-      <p>
+      </div>
+      <div>
         <Video {...defaultSize} /> <span>My video lessons</span>
-      </p>
-      <p>
-        <User {...defaultSize} /> <span>Profile settings</span>
-      </p>
+      </div>
+      <div>
+        <User {...defaultSize} /> <span>My profile</span>
+        <div className="sub-menu">logout</div>
+      </div>
     </Menu>
   );
 };

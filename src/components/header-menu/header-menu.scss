@@ -7,9 +7,13 @@
   background-color: #2288cc;
   align-items: center;
 
-  .logo > a {
-    color: #fff;
-    margin-left: 20px;
+  .logo {
+    margin-top: 15px;
+
+    & > a {
+      color: #fff;
+      margin-left: 20px;
+    }
   }
   .block-two {
     display: flex;

@@ -28,7 +28,7 @@
   .bm-item-list {
     padding: 1rem;
     .bm-item {
-      line-height: 36px;
+      line-height: 50px;
       font-weight: 600;
       cursor: pointer;
       color: white;
@@ -48,6 +48,12 @@
         & svg {
           fill: #fcfdff;
         }
+      }
+
+      .sub-menu {
+        margin: 0 0 0 55px;
+        line-height: 30px;
+        font-size: 14px;
       }
     }
   }
