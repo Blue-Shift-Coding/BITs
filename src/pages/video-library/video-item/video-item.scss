@@ -1,4 +1,23 @@
 .video-item {
   width: 250px;
-  margin: 0 1rem;
+  margin: 0 1rem 1rem;
+  .info {
+    .title {
+      margin-bottom: 1rem;
+    }
+    .sub-info {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & > p {
+        margin-top: 0px;
+      }
+      .watched {
+        font-style: italic;
+        font-size: 14px;
+        color: rgba(182, 22, 22, 0.856);
+      }
+    }
+  }
 }

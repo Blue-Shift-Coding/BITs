@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./video-item.scss";
 
-export const VideoItem = ({ id, title }) => {
+export const VideoItem = ({ id, title, level, watched }) => {
+  console.log({ watched });
   return (
     <div className="video-item">
       <Link to={{ pathname: "/lesson", search: `videoId=${id}` }}>
@@ -13,7 +14,13 @@ export const VideoItem = ({ id, title }) => {
           width="250px"
           height="150px"
         />
-        <h3>{title}</h3>
+        <div className="info">
+          <h3 className="title">{title}</h3>
+          <div className="sub-info">
+            <p>{`Level ${level}`}</p>
+            {watched ? <p className="watched">Watched</p> : null}
+          </div>
+        </div>
       </Link>
     </div>
   );
