@@ -18,7 +18,7 @@ export const VideoPlayer = ({ id }) => {
   });
   const headerHeight = 70;
   const initWidthPlayer = 510;
-  const initHeightPlayer = 380;
+  const initHeightPlayer = 390;
   const halfY = window.innerHeight / 2;
   const halfX = window.innerWidth / 2;
   const [x, setX] = useState(halfX - initWidthPlayer / 2);

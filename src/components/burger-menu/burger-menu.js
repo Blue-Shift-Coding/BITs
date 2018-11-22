@@ -23,7 +23,7 @@ export const BurgerMenu = () => {
       <div>
         <Rocket {...defaultSize} /> <span>My stuff</span>
         <div className="sub-menu">+13,521 points</div>
-        <div className="sub-menu">My challanges</div>
+        <div className="sub-menu">My challenges</div>
       </div>
       <div>
         <Trophy {...defaultSize} /> <span>My achievements</span>

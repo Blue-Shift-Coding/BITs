@@ -11,8 +11,8 @@ export const PlaylistItem = ({ id, title }) => {
     <BlueshiftTooltip title={title}>
       <img
         src={`https://img.youtube.com/vi/${id}/mqdefault.jpg`}
-        width="100px"
-        height="50px"
+        width="105px"
+        height="55px"
         onClick={openVideo}
         visible
         defaultVisible={true}
