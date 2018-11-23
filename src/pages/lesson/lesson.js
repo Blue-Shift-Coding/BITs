@@ -8,7 +8,10 @@ export const Lesson = ({ location }) => {
   return (
     <div style={{ width: "100%", height: "100%", position: "absolute" }}>
       <Scratch />
-      <VideoPlayer id={search.videoId} />
+      <VideoPlayer
+        id={search.videoId}
+        currentPlaylist={search.currentPlaylist}
+      />
     </div>
   );
 };

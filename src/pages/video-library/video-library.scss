@@ -1,13 +1,8 @@
-.video-library {
-  width: 1200px;
-  margin: auto;
-
-  .title {
-    margin-bottom: 3rem;
-  }
-
-  .video-items {
-    display: flex;
-    flex-wrap: wrap;
-  }
+button.btn.challenge-points {
+  border-radius: 0.7rem;
+  font-size: 19px;
+  font-weight: 600;
+  color: #fff;
+  background: #6fbb98;
+  border-color: #6fbb98;
 }

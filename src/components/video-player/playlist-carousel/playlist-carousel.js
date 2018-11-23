@@ -13,10 +13,10 @@ const settings = {
   slidesToShow: 4,
   infinite: false
 };
-export const PlaylistCarousel = () => {
+export const PlaylistCarousel = ({ currentPlaylist }) => {
   return (
     <Slider {...settings} className="playlist-carousel">
-      {playlist.map(({ id, title }) => (
+      {playlist[currentPlaylist].map(({ id, title }) => (
         <PlaylistItem id={id} title={title} />
       ))}
       <Quiz />

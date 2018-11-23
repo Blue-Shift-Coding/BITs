@@ -1,0 +1,25 @@
+.filter-bar {
+  button.btn {
+    border-radius: 0.7rem;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+
+    &.art {
+      background: #ebbe52;
+      border-color: #ebbe52;
+    }
+    &.stories {
+      background: #e05760;
+      border-color: #e05760;
+    }
+    &.games {
+      background: #745271;
+      border-color: #745271;
+    }
+  }
+  .show-watched {
+    vertical-align: bottom;
+    color: #6fbb98;
+  }
+}

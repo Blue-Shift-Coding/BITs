@@ -1,9 +1,16 @@
 .video-item {
-  width: 250px;
-  margin: 0 1rem 1rem;
+  // width: 250px;
+  // margin: 0 1rem 1rem;
+  a:hover {
+    text-decoration: none;
+  }
   .info {
+    color: #000;
+
     .title {
-      margin-bottom: 1rem;
+      font-size: 16px;
+      font-weight: 800;
+      margin: 0.5rem 0 0 0;
     }
     .sub-info {
       font-weight: 600;
@@ -11,6 +18,7 @@
       align-items: center;
       justify-content: space-between;
       & > p {
+        color: rgb(76, 145, 76);
         margin-top: 0px;
       }
       .watched {

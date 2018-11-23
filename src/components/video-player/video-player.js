@@ -11,7 +11,7 @@ import { HomeIcon } from "../../icons/home-icon";
 import "./video-player.scss";
 import { VideoPlayerContext } from "./video-player-context";
 
-export const VideoPlayer = ({ id }) => {
+export const VideoPlayer = ({ id, currentPlaylist }) => {
   const [state, dispatch] = useReducer(videoPlayerType, {
     playerType: YOUTUBE,
     videoId: id
@@ -57,7 +57,7 @@ export const VideoPlayer = ({ id }) => {
           </div>
         )}
 
-        <PlaylistCarousel />
+        <PlaylistCarousel currentPlaylist={currentPlaylist} />
       </VideoPlayerContext.Provider>
     </Rnd>
   );
