@@ -10,28 +10,28 @@ export const playlist = [
   [
     {
       id: "1wTPV0c_Xv4",
-      title: "How to Make a Rainbow Pen in Scratch 3",
+      title: "The Rainbow Pen",
       level: 1,
       watched: true,
       playlist: 0
     },
     {
       id: "Js83Fgzy35E",
-      title: "How to Make a Rainbow Pen in Scratch 3 - Part Two",
+      title: "The Falling Football Game",
       level: 1,
       watched: true,
       playlist: 0
     },
     {
       id: "1wTPV0c_Xv4",
-      title: "How to Make a Rainbow Pen in Scratch 3",
+      title: "The Spongebob Dash Game",
       level: 1,
       watched: false,
       playlist: 0
     },
     {
       id: "8nsZYh3IBRQ",
-      title: "How to Make a Rainbow Pen in Scratch 3 - Part Three",
+      title: "Make an ‘About Me’ Collage",
       level: 1,
       watched: false,
       playlist: 0
@@ -41,28 +41,28 @@ export const playlist = [
   [
     {
       id: "MFl-dyZu03M",
-      title: "Rainbow Pen B Part One",
+      title: "The Underwater Party",
       level: 1,
       watched: false,
       playlist: 1
     },
     {
       id: "4O5MUF51GJ8",
-      title: "Rainbow Pen B Part Two",
+      title: "Desert Rescue",
       level: 1,
       watched: false,
       playlist: 1
     },
     {
       id: "x8FMjedtBeM",
-      title: "Rainbow Pen B Part Three",
+      title: "Form a Band",
       level: 1,
       watched: false,
       playlist: 1
     },
     {
       id: "_PfuJWFtLdA",
-      title: "8 August 2018 - Scratch Intro WIP 02",
+      title: "Angles and Shapes",
       level: 1,
       watched: false,
       playlist: 1
@@ -71,28 +71,28 @@ export const playlist = [
   [
     {
       id: "8nsZYh3IBRQ",
-      title: "How to Make a Rainbow Pen in Scratch 3 - Part Three",
+      title: "Drawing with Sprites",
       level: 1,
       watched: false,
       playlist: 2
     },
     {
       id: "MFl-dyZu03M",
-      title: "Rainbow Pen B Part One",
+      title: "The Maze Game",
       level: 1,
       watched: false,
       playlist: 2
     },
     {
       id: "1wTPV0c_Xv4",
-      title: "How to Make a Rainbow Pen in Scratch 3",
+      title: "Moon Landing",
       level: 1,
       watched: false,
       playlist: 2
     },
     {
       id: "Js83Fgzy35E",
-      title: "How to Make a Rainbow Pen in Scratch 3 - Part Two",
+      title: "Dance Party",
       level: 1,
       watched: false,
       playlist: 2
